@@ -3,11 +3,11 @@ from config import  repositorio
 
 
 repositorio()
-mysqlcursor = repositorio.mydb.cursor()
+cursor = repositorio.mydb.cursor()
 
 # Streamlit app
 def main():
-    st.title("CRUD com MySQL")
+    st.title("CRUD com Postgres")
 
     # Options
     option=st.sidebar.selectbox("Operação", ("Create", "Read", "Update", "Delete"))
